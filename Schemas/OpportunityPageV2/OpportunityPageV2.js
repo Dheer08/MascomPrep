@@ -5,7 +5,23 @@ define("OpportunityPageV2", [], function() {
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		details: /**SCHEMA_DETAILS*/{}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
-		methods: {},
+		methods: {
+			 onEntityInitialized: function() {
+                // onEntityInitialized method parent realization is called.
+                this.callParent(arguments);
+                // The code is generated only in case we create a new element or a copy of the existing element.		
+				 console.log("Hello1");
+                if (this.isAddMode() || this.isCopyMode()) {
+                    //  Call of the Terrasoft.BasePageV2.getIncrementCode base method, that generates the number 
+					 console.log("Hello2");
+                    // according to the previously set mask. 
+                    this.getIncrementCode(function(response) {
+                        // The generated number is stored in [Code] column.
+                        this.set("PsgOppNumber", response);
+                    });
+				}
+			 },
+		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{
