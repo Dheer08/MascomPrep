@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "90ef0a45-5386-46a5-8348-2bbd7f0f72e9",
+    "Name": "Opportunity",
+    "ModifiedOnUtc": "\/Date(1673955682000)\/",
+    "Parent": {
+      "UId": "ae46fb87-c02c-4ae8-ad31-a923cdd994cf",
+      "Name": "Opportunity"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Opportunity"
+  }
+}

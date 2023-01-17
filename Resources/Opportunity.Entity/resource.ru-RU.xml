@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumOnDeleteUserTask.Parameters.ChildColumnUId.Caption" Value="Колонка подчиненного объекта, содержащая данные для расчета" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumOnDeleteUserTask.Parameters.ChildSchemaUId.Caption" Value="Подчиненный объект" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumOnDeleteUserTask.Parameters.ParentColumnRelationUId.Caption" Value="Колонка связи с родительским объектом" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumOnDeleteUserTask.Parameters.ParentColumnRelationValue.Caption" Value="Значение в колонке связи с родительским объектом" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumOnDeleteUserTask.Parameters.ParentColumnResultUId.Caption" Value="Колонка родительского объекта, содержащая результат расчета" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumOnDeleteUserTask.Parameters.ParentSchemaUId.Caption" Value="Родительский объект" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumUserTask.Parameters.ChildColumnUId.Caption" Value="Колонка подчиненного объекта, содержащая данные для расчета" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumUserTask.Parameters.ChildSchemaUId.Caption" Value="Подчиненный объект" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumUserTask.Parameters.ParentColumnRelationUId.Caption" Value="Колонка связи с родительским объектом" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumUserTask.Parameters.ParentColumnRelationValue.Caption" Value="Значение в колонке связи с родительским объектом" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumUserTask.Parameters.ParentColumnResultUId.Caption" Value="Колонка родительского объекта, содержащая результат расчета" />
+			<Item Name="EventsProcessSchema.BaseElements.PrimaryActualRevenueCalcSumUserTask.Parameters.ParentSchemaUId.Caption" Value="Родительский объект" />
+			<Item Name="EventsProcessSchema.BaseElements.SynchronizeStage.Parameters.ChildEntitySchemaUId.Caption" Value="Подчиненный объект" />
+			<Item Name="EventsProcessSchema.BaseElements.SynchronizeStage.Parameters.DefaultValues.Caption" Value="Значения по умолчанию для колонок подчиненного объекта" />
+			<Item Name="EventsProcessSchema.BaseElements.SynchronizeStage.Parameters.DeletingFilters.Caption" Value="Фильтр удаления записей" />
+			<Item Name="EventsProcessSchema.BaseElements.SynchronizeStage.Parameters.MappingColumns.Caption" Value="Связь между колонками родительского и подчиненного объектов" />
+			<Item Name="EventsProcessSchema.BaseElements.SynchronizeStage.Parameters.MultiRowsSearchFilters.Caption" Value="Фильтр выбора нескольких строк" />
+			<Item Name="EventsProcessSchema.BaseElements.SynchronizeStage.Parameters.RequiredAllFields.Caption" Value="Все поля обязательны" />
+			<Item Name="EventsProcessSchema.BaseElements.SynchronizeStage.Parameters.RequiredFields.Caption" Value="Обязательные поля дочернего объекта" />
+			<Item Name="EventsProcessSchema.BaseElements.SynchronizeStage.Parameters.SingleRowSearchFilters.Caption" Value="Фильтр выбора одной строки" />
+		</Items>
+	</Group>
+</Resources>
