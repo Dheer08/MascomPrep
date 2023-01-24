@@ -38,7 +38,7 @@ using System.Collections;
 			Entity attachement = (Entity)sender;
 			string fileName = attachement.GetTypedColumnValue<string>("Name");
 			
-			if(!(fileName.EndsWith(".jpg")|| fileName.EndsWith(".pdf")))
+			if(!(fileName.EndsWith(".pdf"))
 			{
 				e.IsCanceled = true;
 				throw new Exception("Restricted!!!");
