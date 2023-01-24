@@ -4,6 +4,7 @@
     "Name": "UsrDemoSoapApi",
     "ModifiedOnUtc": "\/Date(1674119346000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "UsrDemoSoapApi"
+    "Caption": "UsrDemoSoapApi",
+    "DependsOn": []
   }
 }

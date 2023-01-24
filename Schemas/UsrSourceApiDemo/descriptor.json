@@ -2,8 +2,9 @@
   "Descriptor": {
     "UId": "f46286b8-4bd4-400b-ba0f-833f3c75146e",
     "Name": "UsrSourceApiDemo",
-    "ModifiedOnUtc": "\/Date(1674124923000)\/",
+    "ModifiedOnUtc": "\/Date(1674449044000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "UsrSourceApiDemo"
+    "Caption": "UsrSourceApiDemo",
+    "DependsOn": []
   }
 }

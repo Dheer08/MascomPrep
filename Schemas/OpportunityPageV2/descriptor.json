@@ -9,6 +9,7 @@
     },
     "ExtendParent": true,
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Opportunity edit page "
+    "Caption": "Opportunity edit page ",
+    "DependsOn": []
   }
 }

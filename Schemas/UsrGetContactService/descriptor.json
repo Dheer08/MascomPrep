@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "d35c49ed-33f2-426c-a367-935228e998ac",
+    "Name": "UsrGetContactService",
+    "ModifiedOnUtc": "\/Date(1674478470000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Get Contact Service",
+    "DependsOn": []
+  }
+}

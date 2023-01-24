@@ -9,6 +9,7 @@
     },
     "ExtendParent": true,
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Section schema: \"Opportunities\""
+    "Caption": "Section schema: \"Opportunities\"",
+    "DependsOn": []
   }
 }

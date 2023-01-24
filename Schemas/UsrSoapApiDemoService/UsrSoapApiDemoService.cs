@@ -9,9 +9,11 @@ namespace SoapApiDemo
 {
 	public class SoapApiDemo : ISoapApiService
 	{
-		public int SoapApiInfo(int number)
-		{
-			return number;
+		public SoapResponse SoapApiInfo(SoapResponse _temp1)
+		{	
+			SoapResponse _temp = new SoapResponse();
+			_temp=_temp1;
+			return _temp;
 		}
 	
 	}

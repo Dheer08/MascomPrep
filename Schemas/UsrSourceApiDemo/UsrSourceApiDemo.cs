@@ -12,8 +12,31 @@ namespace SoapApiDemo
     public interface ISoapApiService
     {
         [OperationContract]
-        int SoapApiInfo(int number);
+        SoapResponse SoapApiInfo(SoapResponse _temp1);
     }	
+	[DataContract]
+	public class SoapResponse
+	{
+		
+		int number = 0;
+		string text = "";
+		[DataMember]
+		public int Number
+		{
+			
+			get {return number;}
+			set { number = value;}
+		}
+		[DataMember]
+		public string Text
+		{
+			
+			get {return text;}
+			set { text = value;}
+		}
+		
+		
+	}
 	
 	
 	

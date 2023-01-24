@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "9c34a97a-eb8a-4920-bd07-c09fe37e59ec",
+    "Name": "UsrSoapNoAuth",
+    "ModifiedOnUtc": "\/Date(1674537441000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Soap No Auth",
+    "DependsOn": []
+  }
+}

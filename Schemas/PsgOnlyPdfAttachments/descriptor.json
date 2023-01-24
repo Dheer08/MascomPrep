@@ -4,6 +4,7 @@
     "Name": "PsgOnlyPdfAttachments",
     "ModifiedOnUtc": "\/Date(1673953994000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "OnlyPdfAttachments"
+    "Caption": "OnlyPdfAttachments",
+    "DependsOn": []
   }
 }
