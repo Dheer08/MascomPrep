@@ -1,4 +1,4 @@
-
+using System.IO;
 namespace UsrGetContactService
 {
 /*
@@ -24,7 +24,7 @@ using Terrasoft.Configuration;*/
     using System.ServiceModel.Web;
     using System.ServiceModel.Activation;
     using Terrasoft.Web.Common;
-    using System.IO;
+    //using System.IO;
     using Newtonsoft.Json.Linq;
     using Newtonsoft.Json;
     using System.Collections.Generic;
@@ -40,8 +40,8 @@ using Terrasoft.Configuration;*/
     using RestSharp.Extensions;
     using System.ComponentModel;
 	using System.Runtime.Serialization;
-	
-	
+	using System.Xml; 
+	using System.Xml.Linq;
 	
 	public class ContactResponse
 	{
@@ -77,6 +77,19 @@ using Terrasoft.Configuration;*/
 		
 	}
 	
+	public class Student
+	{
+		public string Name{get;set;}
+		public string Location {get;set;}
+		
+	}
+	 public class ListStudents
+	 {
+		 public List<Student> Stud{get;set;}
+		 
+	 }
+	
+	
 	[ServiceContract]
 	public class UsrGetContactService:BaseService
 	{
@@ -87,9 +100,34 @@ using Terrasoft.Configuration;*/
             }
 		}*/
 		 [OperationContract]
-		public ContactResponse  GetContact()
-		{	Guid Id = Guid.Parse("c4ed336c-3e9b-40fe-8b82-5632476472b4");
-			ContactResponse contact = new ContactResponse();
+		public List<Student> GetContact(Stream data)
+		{	//Guid Id = Guid.Parse("c4ed336c-3e9b-40fe-8b82-5632476472b4");
+			//Id= "Hii";
+			//var sr = new StreamReader(data);
+			//var content = sr.ReadToEnd();
+			
+		/*	if (data.Postition > 0)
+			{
+			data.Position = 0;
+			}*/
+			string temp = "";
+		XDocument document = XDocument.Load(data);
+		List<Student> listOfStudents = new List<Student>();
+		
+		 foreach (XElement element in document.Descendants("Student"))
+        {
+         	   
+			// temp = temp+ element.Element("Name").Value;
+			Student stu = new Student();
+			stu.Name =  element.Element("Name").Value;
+			stu.Location = element.Element("Location").Value;
+			
+			listOfStudents.Add(stu);
+        }
+		
+			return listOfStudents;
+			
+		/*	ContactResponse contact = new ContactResponse();
 			var esqContact = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "Contact");
 			var Id1 = esqContact.AddColumn("Id");
 			var Name=esqContact.AddColumn("Name");
@@ -103,7 +141,7 @@ using Terrasoft.Configuration;*/
 		//	contact.City = entity.GetTypedColumnValue<string>("City");
 			return contact;
 			//return Id;
-			
+	*/		
 		}
 	
 	}
